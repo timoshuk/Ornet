@@ -14,7 +14,11 @@
 
   <!-- SEO TAG -->
   <meta name="description" content="Place the meta description text here." />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <!-- Font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     referrerpolicy="no-referrer" />
@@ -68,88 +72,101 @@
         <!-- page-lang -->
       </div>
       <!-- header__top -->
-      <div class="header__info">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img src="./images/main_logo.png" alt="logo" class="ligo__img">
-          </a>
-        </div>
-        <!-- logo -->
 
-        <div class="contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list__item"><a href="#" class="contacts-list__link">Офисы продаж в Киеве</a></li>
-            <li class="contacts-list__item"><a href="#" class="contacts-list__link">С 9:00 до 19:00 без выходных</a>
-            </li>
-            <ul class="contacts-list__select">
-              <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
-                <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
+      <div class="header__bottom">
+        <div class="header__info">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="./images/main_logo.png" alt="logo" class="logo__img">
+            </a>
+          </div>
+          <!-- logo -->
+          <div class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-list__item mobile-hiden"><a href="#" class="contacts-list__link">Офисы
+                  продаж в Киеве</a></li>
+              <li class="contacts-list__item mobile-hiden"><a href="#" class="contacts-list__link">С 9:00 до
+                  19:00 без выходных</a>
               </li>
-              <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
-                <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
+
+              <li class="contacts-list__item contacts-list__item--sub"><a href="#"
+                  class="contacts-list__link">044-33179-35</a><br />
+                <a href="#" class="contacts-list__link mobile-hiden">info@ornet.com.ua</a>
+                <ul class="contacts-list__submenu">
+                  <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
+                    <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
+                  </li>
+                  <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
+                    <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
+                  </li>
+                </ul>
+
               </li>
-              <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
-                <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
-              </li>
+
             </ul>
-
-          </ul>
-          <!-- contacts-list -->
-          <button class="btn btn--main">
-            <i class="fas fa-tape"></i> Записаться на замер
-          </button>
-          <!-- btn -->
+            <!-- contacts-list -->
+            <button class="btn btn--main mobile-hiden">
+              <i class="fas fa-tape"></i> Записаться на замер
+            </button>
+            <!-- btn -->
+          </div>
+          <!-- contacts -->
         </div>
-        <!-- contacts -->
-      </div>
-      <!-- header__info -->
+        <!-- header__info -->
 
-      <div class="goods">
-        <nav class="goods__nav">
-          <ul class="goods__nav-list">
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Окна</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Двери</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Балконы</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Перегородки</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Ворота и роллеты</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Комплектующие</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Цены</a>
-            </li>
-            <!-- goods__nav-item -->
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Услуги</a>
-            </li>
-            <!-- goods__nav-item -->
+        <div class="goods">
+          <nav class="goods__nav">
+            <button class="goods__nav-btn goods__nav-btn--open">
+              <span class="goods__nav-btn-line"></span>
+              <span class="goods__nav-btn-line"></span>
+              <span class="goods__nav-btn-line"></span>
+            </button>
+            <ul class="goods__nav-list goods__nav-list--show">
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Окна</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Двери</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Балконы</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Перегородки</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Ворота и роллеты</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Комплектующие</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Цены</a>
+              </li>
+              <!-- goods__nav-item -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Услуги</a>
+              </li>
+              <!-- goods__nav-item -->
 
-            <li class="goods__nav-item">
-              <a href="#" class="goods__nav-link">Наши работы</a>
-            </li>
-            <!-- goods__nav-item -->
-          </ul>
-          <!-- goods__nav-list -->
-        </nav>
-        <!-- goods__nav -->
+              <li class="goods__nav-item">
+                <a href="#" class="goods__nav-link">Наши работы</a>
+              </li>
+              <!-- goods__nav-item -->
+            </ul>
+            <!-- goods__nav-list -->
+          </nav>
+          <!-- goods__nav -->
+        </div>
+        <!-- goods -->
       </div>
-      <!-- goods -->
+      <!-- header__bottom -->
 
     </header>
     <!-- header -->

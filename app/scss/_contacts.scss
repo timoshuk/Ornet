@@ -1,0 +1,47 @@
+.contacts-list {
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__item--sub::after {
+    display: block;
+    width: 14px;
+    height: 24px;
+    background-image: url(../images/chevron-down.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    top: 0px;
+    right: -18px;
+
+    content: "";
+  }
+
+  &__item--sub:hover .contacts-list__submenu {
+    display: block;
+    position: absolute;
+    padding-left: 16px;
+    padding-right: 16px;
+    z-index: 99;
+    left: 0;
+    top: 100%;
+    padding-left: 0;
+    background-color: var(--bg-color);
+  }
+
+  &__link {
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.contacts-list__submenu {
+  display: none;
+}

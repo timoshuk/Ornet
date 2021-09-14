@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  min-width: 100%;
+  overflow-y: visible;
+
+  margin-bottom: 20px;
+}
+
+.header__top {
+  display: none;
+  overflow-y: visible;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

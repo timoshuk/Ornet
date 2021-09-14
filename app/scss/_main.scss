@@ -1,14 +1,28 @@
 :root {
   box-sizing: border-box;
+  font-size: 10px;
+  --main-font: "Montserrat", sans-serif;
+  --bg-color: #03204a;
 }
 
 *,
 ::before,
 ::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   overflow-x: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1em;
+  color: #fff;
+  background-color: var(--bg-color);
 }

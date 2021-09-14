@@ -1,0 +1,15 @@
+.logo {
+  margin-right: 44px;
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__img {
+    display: block;
+    width: 108px;
+    min-height: 32px;
+    // object-fit: contain;
+  }
+}
