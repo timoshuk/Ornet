@@ -1,9 +1,26 @@
+.contacts {
+  @include mq("tablet-wide") {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}
+
 .contacts-list {
   list-style: none;
+  @include mq("tablet-wide") {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
   &__item {
-    display: inline-block;
     position: relative;
+    @include mq("tablet-wide") {
+      margin-right: 32px;
+      max-width: 185px;
+    }
   }
 
   &__item--sub::after {
@@ -37,12 +54,53 @@
     font-weight: 700;
     line-height: 1.5;
     text-decoration: none;
-    color: inherit;
+    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
     outline: none;
+    transition: all 0.4s ease-in-out;
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    @include mq("tablet-wide") {
+      display: inline-block;
+    }
   }
 }
 
 .contacts-list__submenu {
   display: none;
+  list-style: none;
+  & .contacts-list__item {
+    margin-top: 1em;
+  }
+}
+
+.contacts-list__address::before,
+.contacts-list__time::before,
+.contacts-list__phone::before {
+  @include mq("tablet-wide") {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/map-marker-alt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+  }
+}
+
+.contacts-list__time::before {
+  background-image: url(../images/clock.png);
+}
+
+.contacts-list__phone::before {
+  @include mq("tablet-wide") {
+    background-image: url(../images/phone-alt.png);
+  }
 }

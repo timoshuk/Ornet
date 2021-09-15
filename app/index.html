@@ -60,16 +60,19 @@
           <!-- main-nav__list -->
         </nav>
         <!-- main-nav -->
-        <div class="social-links">
-          <ul class="social-links_item"><a href="#"><i class="fab fa-facebook"></i></a></ul>
-          <ul class="social-links_item"><a href="#"><i class="fab fa-instagram"></i></a></ul>
+        <div class="header__top-wrap">
+          <div class="social-links">
+            <ul class="social-links_item"><a href="#"><i class="fab fa-facebook"></i></a></ul>
+            <ul class="social-links_item"><a href="#"><i class="fab fa-instagram"></i></a></ul>
+          </div>
+          <!-- social-links -->
+          <div class="page-lang">
+            <a href="#" class="page-lang__ru">рус</a>
+            &#47;
+            <a href="#" class="page-lang__uk active-lang">укр</a>
+          </div>
+          <!-- page-lang -->
         </div>
-        <!-- social-links -->
-        <div class="page-lang">
-          <a href="#" class="page-lang__ru">рус</a>
-          <a href="#" class="page-lang__uk">укр</a>
-        </div>
-        <!-- page-lang -->
       </div>
       <!-- header__top -->
 
@@ -83,13 +86,15 @@
           <!-- logo -->
           <div class="contacts">
             <ul class="contacts-list">
-              <li class="contacts-list__item mobile-hiden"><a href="#" class="contacts-list__link">Офисы
+              <li class="contacts-list__item contacts-list__address mobile-hiden"><a href="#"
+                  class="contacts-list__link">Офисы
                   продаж в Киеве</a></li>
-              <li class="contacts-list__item mobile-hiden"><a href="#" class="contacts-list__link">С 9:00 до
+              <li class="contacts-list__item contacts-list__time mobile-hiden "><a href="#"
+                  class="contacts-list__link">С 9:00 до
                   19:00 без выходных</a>
               </li>
 
-              <li class="contacts-list__item contacts-list__item--sub"><a href="#"
+              <li class="contacts-list__item contacts-list__phone contacts-list__item--sub"><a href="#"
                   class="contacts-list__link">044-33179-35</a><br />
                 <a href="#" class="contacts-list__link mobile-hiden">info@ornet.com.ua</a>
                 <ul class="contacts-list__submenu">
@@ -105,7 +110,7 @@
 
             </ul>
             <!-- contacts-list -->
-            <button class="btn btn--main mobile-hiden">
+            <button class="btn btn--pop-up mobile-hiden">
               <i class="fas fa-tape"></i> Записаться на замер
             </button>
             <!-- btn -->
@@ -177,6 +182,9 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
+            <div class="swiper__slide-img">
+              <img src="./images/window.svg" alt="window">
+            </div>
             <div class="swiper__content">
               <h2 class="swiper__slide-title">
                 Доступные ценына окна Rehau
@@ -197,14 +205,15 @@
               <a href="#" class="swiper__read-more">Подробнее...</a>
             </div>
             <!-- swiper__content -->
-            <div class="swiper__slide-img">
-              <img src="./images/window.svg" alt="window">
-            </div>
+
             <button class="btn swiper__btn">Скидки -20 %</button>
           </div>
           <!-- swiper-slide -->
 
           <div class="swiper-slide">
+            <div class="swiper__slide-img swiper__slide-img--yellow">
+              <img src="./images/window.svg" alt="window">
+            </div>
             <div class="swiper__content">
               <h2 class="swiper__slide-title">
                 Доступные ценына окна Rehau
@@ -225,14 +234,15 @@
               <a href="#" class="swiper__read-more">Подробнее</a>
             </div>
             <!-- swiper__content -->
-            <div class="swiper__slide-img">
-              <img src="./images/window.svg" alt="window">
-            </div>
+
             <button class="btn swiper__btn">Скидки -20 %</button>
           </div>
           <!-- swiper-slide -->
 
           <div class="swiper-slide">
+            <div class="swiper__slide-img swiper__slide-img--magenta">
+              <img src="./images/window.svg" alt="window">
+            </div>
             <div class="swiper__content">
               <h2 class="swiper__slide-title">
                 Доступные ценына окна Rehau
@@ -253,9 +263,7 @@
               <a href="#" class="swiper__read-more">Подробнее</a>
             </div>
             <!-- swiper__content -->
-            <div class="swiper__slide-img">
-              <img src="./images/window.svg" alt="window">
-            </div>
+
             <button class="btn swiper__btn">Скидки -20 %</button>
           </div>
           <!-- swiper-slide -->
@@ -267,9 +275,6 @@
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
       <!-- swiper -->
     </main>

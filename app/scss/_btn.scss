@@ -3,6 +3,7 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   /* invisible border (will be colored on hover/focus) */
   border: solid 1px transparent;
@@ -29,5 +30,23 @@
   &:active {
     transform: translateY(1px);
     filter: saturate(150%);
+  }
+}
+
+.btn.btn--pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-weight: 600;
+  line-height: 1.25;
+
+  .fas {
+    display: inline-block;
+    font-size: 32px;
   }
 }

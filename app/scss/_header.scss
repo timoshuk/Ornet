@@ -8,18 +8,51 @@
 
 .header__top {
   display: none;
-  overflow-y: visible;
+  @include mq("tablet-wide") {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  @include mq("desktop") {
+    justify-content: space-between;
+  }
+}
+
+.header__top-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include mq("desktop") {
+    width: 24%;
+    justify-content: space-between;
+  }
 }
 
 .header__bottom {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   height: auto;
+  @include mq("tablet-wide") {
+    flex-direction: column;
+  }
 }
 
 .header__info {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @include mq("tablet") {
+    justify-content: space-between;
+    width: 60%;
+  }
+  @include mq("tablet-wide") {
+    width: 100%;
+    margin-bottom: 48px;
+  }
 }

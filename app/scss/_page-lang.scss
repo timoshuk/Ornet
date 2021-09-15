@@ -1,0 +1,19 @@
+.page-lang a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+
+  &.active-lang {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}

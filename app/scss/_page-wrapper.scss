@@ -4,8 +4,16 @@
   min-width: 360px;
   max-width: 1440px;
   min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 16px;
   padding-right: 16px;
   padding-bottom: 26px;
   padding-left: 16px;
+  overflow-x: hidden;
+
+  @include mq("desktop") {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }

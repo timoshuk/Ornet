@@ -1,0 +1,26 @@
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.social-links_item {
+  @include mq("desktop") {
+    margin-right: 32px;
+  }
+  a {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.4s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+}

@@ -10,6 +10,10 @@
     display: block;
     width: 108px;
     min-height: 32px;
-    // object-fit: contain;
+    @include mq("desktop") {
+      width: 216px;
+      height: 64px;
+      margin-right: 48px;
+    }
   }
 }
