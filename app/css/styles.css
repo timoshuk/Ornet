@@ -338,7 +338,8 @@ template {
   font-size: 10px;
   --main-font: "Montserrat", sans-serif;
   --bg-color: #03204a;
-  --accent-color: #d70000; }
+  --accent-color: #d70000;
+  --hover-color: #d70000b0; }
 
 *,
 ::before,
@@ -371,9 +372,38 @@ body {
     width: 108px;
     min-height: 32px; }
 
+.btn {
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 12px;
+  /* size comes from text & padding (no width/height) */
+  padding: 10px 16px;
+  outline: none;
+  /* make sure colors have enough contrast! */
+  color: inherit;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  -webkit-animation: all 0.6s;
+          animation: all 0.6s; }
+  .btn:hover {
+    border-color: currentColor;
+    background-color: var(--hover-color); }
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5), 0 0 0 1.5px rgba(255, 105, 180, 0.5); }
+  .btn:active {
+    transform: translateY(1px);
+    filter: saturate(150%); }
+
 .swiper {
   width: 100%;
-  height: 120vh; }
+  height: 125vh;
+  overflow-x: scroll;
+  margin-bottom: 26px; }
 
 .swiper-slide {
   position: relative;
@@ -473,7 +503,7 @@ body {
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   position: absolute;
-  top: 30%;
+  top: 15%;
   right: 0;
   width: auto !important;
   left: auto !important;
@@ -598,6 +628,11 @@ body {
     width: 48px;
     height: 48px;
     opacity: 1; } }
+
+.swiper__btn {
+  position: absolute;
+  top: 5px;
+  right: 0px; }
 
 .page-wrapper {
   position: relative;

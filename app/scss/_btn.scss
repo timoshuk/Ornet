@@ -1,0 +1,33 @@
+.btn {
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 12px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 10px 16px;
+  outline: none;
+
+  /* make sure colors have enough contrast! */
+  color: inherit;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  animation: all 0.6s;
+  &:hover {
+    border-color: currentColor;
+    background-color: var(--hover-color);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+      0 0 0 1.5px rgba(255, 105, 180, 0.5);
+  }
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+}

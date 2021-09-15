@@ -1,6 +1,8 @@
 .swiper {
   width: 100%;
-  height: 120vh;
+  height: 125vh;
+  overflow-x: scroll;
+  margin-bottom: 26px;
 }
 
 .swiper-slide {
@@ -87,7 +89,7 @@
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   position: absolute;
-  top: 30%;
+  top: 15%;
   right: 0;
   width: auto !important;
   left: auto !important;
@@ -210,4 +212,10 @@
     height: 48px;
     opacity: 1;
   }
+}
+
+.swiper__btn {
+  position: absolute;
+  top: 5px;
+  right: 0px;
 }
