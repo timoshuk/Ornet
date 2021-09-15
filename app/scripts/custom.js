@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const goodsNavItems = document.querySelectorAll(".goods__nav-link");
 
   clickEventsHendler();
+  swiperInit();
 
   // Show mobile nav
   function showNav() {
@@ -24,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function swiperInit() {
+    // var menu = ["Slide 1", "Slide 2", "Slide 3"];
+
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "vertical",
@@ -36,11 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
       // If we need pagination
       pagination: {
         el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          index++;
+          return (
+            '<img class="' +
+            className +
+            '" src="../images/window_' +
+            index +
+            '.png"  />'
+          );
+        },
       },
     });
   }
-
-  swiperInit();
 });
 
 // swiper-slide-active

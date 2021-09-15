@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var navBtn = document.getElementById("goods__nav-btn");
   var goodsNav = document.querySelector(".goods__nav-list");
   var goodsNavItems = document.querySelectorAll(".goods__nav-link");
-  clickEventsHendler(); // Show mobile nav
+  clickEventsHendler();
+  swiperInit(); // Show mobile nav
 
   function showNav() {
     navBtn.classList.toggle("goods__nav-btn--open");
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function swiperInit() {
+    // var menu = ["Slide 1", "Slide 2", "Slide 3"];
     var swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "vertical",
@@ -33,10 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
       effect: "slide",
       // If we need pagination
       pagination: {
-        el: ".swiper-pagination"
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function renderBullet(index, className) {
+          index++;
+          return '<img class="' + className + '" src="../images/window_' + index + '.png"  />';
+        }
       }
     });
   }
-
-  swiperInit();
 }); // swiper-slide-active
