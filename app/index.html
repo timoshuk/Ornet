@@ -1,293 +1,357 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#03204A" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#03204A" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#03204A" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#03204A" />
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#03204A" />
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#03204A" />
+    <!-- SEO TAG -->
+    <meta name="description" content="Place the meta description text here." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- SEO TAG -->
-  <meta name="description" content="Place the meta description text here." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <!-- Font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    referrerpolicy="no-referrer" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--endbuild-->
+    <link rel="icon" href="images/logo.png" type="image/png" />
 
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!--endbuild-->
-  <link rel="icon" href="images/logo.png" type="image/png" />
+    <title>Орнет</title>
+  </head>
 
-  <title>Орнет</title>
-</head>
-
-<body>
-  <div class="page-wrapper">
-    <header class="header">
-      <div class="header__top">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Гарантии</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Рассрочка 0%</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Акции</a></li>
-            <!-- main-nav__item -->
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Полезно знать</a></li>
-            <!-- main-nav__item -->
-          </ul>
-          <!-- main-nav__list -->
-        </nav>
-        <!-- main-nav -->
-        <div class="header__top-wrap">
-          <div class="social-links">
-            <ul class="social-links_item"><a href="#"><i class="fab fa-facebook"></i></a></ul>
-            <ul class="social-links_item"><a href="#"><i class="fab fa-instagram"></i></a></ul>
-          </div>
-          <!-- social-links -->
-          <div class="page-lang">
-            <a href="#" class="page-lang__ru">рус</a>
-            &#47;
-            <a href="#" class="page-lang__uk active-lang">укр</a>
-          </div>
-          <!-- page-lang -->
-        </div>
-      </div>
-      <!-- header__top -->
-
-      <div class="header__bottom">
-        <div class="header__info">
-          <div class="logo">
-            <a href="#" class="logo__link">
-              <img src="./images/main_logo.png" alt="logo" class="logo__img">
-            </a>
-          </div>
-          <!-- logo -->
-          <div class="contacts">
-            <ul class="contacts-list">
-              <li class="contacts-list__item contacts-list__address mobile-hiden"><a href="#"
-                  class="contacts-list__link">Офисы
-                  продаж в Киеве</a></li>
-              <li class="contacts-list__item contacts-list__time mobile-hiden "><a href="#"
-                  class="contacts-list__link">С 9:00 до
-                  19:00 без выходных</a>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header__top">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Главная</a>
               </li>
-
-              <li class="contacts-list__item contacts-list__phone contacts-list__item--sub"><a href="#"
-                  class="contacts-list__link">044-33179-35</a><br />
-                <a href="#" class="contacts-list__link mobile-hiden">info@ornet.com.ua</a>
-                <ul class="contacts-list__submenu">
-                  <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
-                    <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
-                  </li>
-                  <li class="contacts-list__item"><a href="#" class="contacts-list__link">044-33179-35</a><br />
-                    <a href="#" class="contacts-list__link">info@ornet.com.ua</a>
-                  </li>
-                </ul>
-
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">О нас</a>
               </li>
-
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Отзывы</a>
+              </li>
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Гарантии</a>
+              </li>
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Рассрочка 0%</a>
+              </li>
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Акции</a>
+              </li>
+              <!-- main-nav__item -->
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Полезно знать</a>
+              </li>
+              <!-- main-nav__item -->
             </ul>
-            <!-- contacts-list -->
-            <button class="btn btn--pop-up mobile-hiden">
-              <i class="fas fa-tape"></i> Записаться на замер
-            </button>
-            <!-- btn -->
-          </div>
-          <!-- contacts -->
-        </div>
-        <!-- header__info -->
-
-        <div class="goods">
-          <nav class="goods__nav">
-            <button id="goods__nav-btn" class="goods__nav-btn">
-              <span class="goods__nav-btn-line"></span>
-              <span class="goods__nav-btn-line"></span>
-              <span class="goods__nav-btn-line"></span>
-            </button>
-            <ul class="goods__nav-list">
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Окна</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Двери</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Балконы</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Перегородки</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Ворота и роллеты</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Комплектующие</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Цены</a>
-              </li>
-              <!-- goods__nav-item -->
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Услуги</a>
-              </li>
-              <!-- goods__nav-item -->
-
-              <li class="goods__nav-item">
-                <a href="#" class="goods__nav-link">Наши работы</a>
-              </li>
-              <!-- goods__nav-item -->
-            </ul>
-            <!-- goods__nav-list -->
+            <!-- main-nav__list -->
           </nav>
-          <!-- goods__nav -->
+          <!-- main-nav -->
+          <div class="header__top-wrap">
+            <div class="social-links">
+              <ul class="social-links_item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </ul>
+              <ul class="social-links_item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </ul>
+            </div>
+            <!-- social-links -->
+            <div class="page-lang">
+              <a href="#" class="page-lang__ru">рус</a>
+              &#47;
+              <a href="#" class="page-lang__uk active-lang">укр</a>
+            </div>
+            <!-- page-lang -->
+          </div>
         </div>
-        <!-- goods -->
-      </div>
-      <!-- header__bottom -->
+        <!-- header__top -->
 
-    </header>
-    <!-- header -->
-    <main class="main-content">
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="swiper__slide-img">
-              <img src="./images/window.svg" alt="window">
+        <div class="header__bottom">
+          <div class="header__info">
+            <div class="logo">
+              <a href="/" class="logo__link">
+                <img
+                  src="./images/main_logo.png"
+                  alt="logo"
+                  class="logo__img"
+                />
+              </a>
             </div>
-            <div class="swiper__content">
-              <h2 class="swiper__slide-title">
-                Доступные ценына окна Rehau
-              </h2>
-              <!-- swiper__slide-title -->
+            <!-- logo -->
+            <div class="contacts">
+              <ul class="contacts-list">
+                <li
+                  class="
+                    contacts-list__item contacts-list__address
+                    mobile-hiden
+                  "
+                >
+                  <a href="#" class="contacts-list__link"
+                    >Офисы продаж в Киеве</a
+                  >
+                </li>
+                <li
+                  class="contacts-list__item contacts-list__time mobile-hiden"
+                >
+                  <a href="#" class="contacts-list__link"
+                    >С 9:00 до 19:00 без выходных</a
+                  >
+                </li>
 
-              <h3 class="swiper__slide-sub-title">
-                Акция к лету
-              </h3>
-              <!-- swiper__slide-sub-title -->
-              <p class="swiper__slide-content">Металлопластиковые окна и двери уже почти два десятилетия активно
-                используются на рынке остекления, что
-                объясняется большим разнообразием дизайнерских решений, отличными эксплуатационными характеристиками,
-                длительным сроком использования. Компания «Орнет» с 2004 года выполняет остекление квартир, частных
-                домов.</p>
-              <!-- swiper__slide-content -->
-
-              <a href="#" class="swiper__read-more">Подробнее...</a>
+                <li
+                  class="
+                    contacts-list__item
+                    contacts-list__phone
+                    contacts-list__item--sub
+                  "
+                >
+                  <a href="#" class="contacts-list__link">044-33179-35</a><br />
+                  <a href="#" class="contacts-list__link mobile-hiden"
+                    >info@ornet.com.ua</a
+                  >
+                  <ul class="contacts-list__submenu">
+                    <li class="contacts-list__item">
+                      <a href="#" class="contacts-list__link">044-33179-35</a
+                      ><br />
+                      <a href="#" class="contacts-list__link"
+                        >info@ornet.com.ua</a
+                      >
+                    </li>
+                    <li class="contacts-list__item">
+                      <a href="#" class="contacts-list__link">044-33179-35</a
+                      ><br />
+                      <a href="#" class="contacts-list__link"
+                        >info@ornet.com.ua</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- contacts-list -->
+              <button class="btn btn--pop-up mobile-hiden">
+                <i class="fas fa-tape"></i> Записаться на замер
+              </button>
+              <!-- btn -->
             </div>
-            <!-- swiper__content -->
-
-            <button class="btn swiper__btn">Скидки -20 %</button>
+            <!-- contacts -->
           </div>
-          <!-- swiper-slide -->
+          <!-- header__info -->
 
-          <div class="swiper-slide">
-            <div class="swiper__slide-img swiper__slide-img--yellow">
-              <img src="./images/window.svg" alt="window">
-            </div>
-            <div class="swiper__content">
-              <h2 class="swiper__slide-title">
-                Доступные ценына окна Rehau
-              </h2>
-              <!-- swiper__slide-title -->
+          <div class="goods">
+            <nav class="goods__nav">
+              <button id="goods__nav-btn" class="goods__nav-btn">
+                <span class="goods__nav-btn-line"></span>
+                <span class="goods__nav-btn-line"></span>
+                <span class="goods__nav-btn-line"></span>
+              </button>
+              <ul class="goods__nav-list">
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Окна</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Двери</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Балконы</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Перегородки</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Ворота и роллеты</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Комплектующие</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Цены</a>
+                </li>
+                <!-- goods__nav-item -->
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Услуги</a>
+                </li>
+                <!-- goods__nav-item -->
 
-              <h3 class="swiper__slide-sub-title">
-                Акция к лету
-              </h3>
-              <!-- swiper__slide-sub-title -->
-              <p class="swiper__slide-content">Металлопластиковые окна и двери уже почти два десятилетия активно
-                используются на рынке остекления, что
-                объясняется большим разнообразием дизайнерских решений, отличными эксплуатационными характеристиками,
-                длительным сроком использования. Компания «Орнет» с 2004 года выполняет остекление квартир, частных
-                домов.</p>
-              <!-- swiper__slide-content -->
-
-              <a href="#" class="swiper__read-more">Подробнее</a>
-            </div>
-            <!-- swiper__content -->
-
-            <button class="btn swiper__btn">Скидки -20 %</button>
+                <li class="goods__nav-item">
+                  <a href="#" class="goods__nav-link">Наши работы</a>
+                </li>
+                <!-- goods__nav-item -->
+              </ul>
+              <!-- goods__nav-list -->
+            </nav>
+            <!-- goods__nav -->
           </div>
-          <!-- swiper-slide -->
-
-          <div class="swiper-slide">
-            <div class="swiper__slide-img swiper__slide-img--magenta">
-              <img src="./images/window.svg" alt="window">
-            </div>
-            <div class="swiper__content">
-              <h2 class="swiper__slide-title">
-                Доступные ценына окна Rehau
-              </h2>
-              <!-- swiper__slide-title -->
-
-              <h3 class="swiper__slide-sub-title">
-                Акция к лету
-              </h3>
-              <!-- swiper__slide-sub-title -->
-              <p class="swiper__slide-content">Металлопластиковые окна и двери уже почти два десятилетия активно
-                используются на рынке остекления, что
-                объясняется большим разнообразием дизайнерских решений, отличными эксплуатационными характеристиками,
-                длительным сроком использования. Компания «Орнет» с 2004 года выполняет остекление квартир, частных
-                домов.</p>
-              <!-- swiper__slide-content -->
-
-              <a href="#" class="swiper__read-more">Подробнее</a>
-            </div>
-            <!-- swiper__content -->
-
-            <button class="btn swiper__btn">Скидки -20 %</button>
-          </div>
-          <!-- swiper-slide -->
-
+          <!-- goods -->
         </div>
+        <!-- header__bottom -->
+      </header>
+      <!-- header -->
+      <main class="main-content">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper__slide-img">
+                <img src="./images/window.svg" alt="window" />
+              </div>
+              <div class="swiper__content">
+                <h2 class="swiper__slide-title">Доступные ценына окна Rehau</h2>
+                <!-- swiper__slide-title -->
 
-        <!-- swiper-wrapper -->
+                <h3 class="swiper__slide-sub-title">Акция к лету</h3>
+                <!-- swiper__slide-sub-title -->
+                <p class="swiper__slide-content">
+                  Металлопластиковые окна и двери уже почти два десятилетия
+                  активно используются на рынке остекления, что объясняется
+                  большим разнообразием дизайнерских решений, отличными
+                  эксплуатационными характеристиками, длительным сроком
+                  использования. Компания «Орнет» с 2004 года выполняет
+                  остекление квартир, частных домов.
+                </p>
+                <!-- swiper__slide-content -->
 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+                <a href="#" class="swiper__read-more">Подробнее...</a>
+              </div>
+              <!-- swiper__content -->
 
-      </div>
-      <!-- swiper -->
-    </main>
-    <!-- main-content -->
-  </div>
-  <!-- page-wrapper -->
+              <button class="btn swiper__btn">Скидки -20 %</button>
+            </div>
+            <!-- swiper-slide -->
 
-  <!-- Swiper slider -->
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <div class="swiper-slide">
+              <div class="swiper__slide-img swiper__slide-img--yellow">
+                <img src="./images/window.svg" alt="window" />
+              </div>
+              <div class="swiper__content">
+                <h2 class="swiper__slide-title">Доступные ценына окна Rehau</h2>
+                <!-- swiper__slide-title -->
 
-  <!--build:js js/main.min.js -->
-  <script src="js/custom.js"></script>
-  <!-- endbuild -->
-</body>
+                <h3 class="swiper__slide-sub-title">Акция к лету</h3>
+                <!-- swiper__slide-sub-title -->
+                <p class="swiper__slide-content">
+                  Металлопластиковые окна и двери уже почти два десятилетия
+                  активно используются на рынке остекления, что объясняется
+                  большим разнообразием дизайнерских решений, отличными
+                  эксплуатационными характеристиками, длительным сроком
+                  использования. Компания «Орнет» с 2004 года выполняет
+                  остекление квартир, частных домов.
+                </p>
+                <!-- swiper__slide-content -->
 
+                <a href="#" class="swiper__read-more">Подробнее</a>
+              </div>
+              <!-- swiper__content -->
+
+              <button class="btn swiper__btn">Скидки -20 %</button>
+            </div>
+            <!-- swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="swiper__slide-img swiper__slide-img--magenta">
+                <img src="./images/window.svg" alt="window" />
+              </div>
+              <div class="swiper__content">
+                <h2 class="swiper__slide-title">Доступные ценына окна Rehau</h2>
+                <!-- swiper__slide-title -->
+
+                <h3 class="swiper__slide-sub-title">Акция к лету</h3>
+                <!-- swiper__slide-sub-title -->
+                <p class="swiper__slide-content">
+                  Металлопластиковые окна и двери уже почти два десятилетия
+                  активно используются на рынке остекления, что объясняется
+                  большим разнообразием дизайнерских решений, отличными
+                  эксплуатационными характеристиками, длительным сроком
+                  использования. Компания «Орнет» с 2004 года выполняет
+                  остекление квартир, частных домов.
+                </p>
+                <!-- swiper__slide-content -->
+
+                <a href="#" class="swiper__read-more">Подробнее</a>
+              </div>
+              <!-- swiper__content -->
+
+              <button class="btn swiper__btn">Скидки -20 %</button>
+            </div>
+            <!-- swiper-slide -->
+          </div>
+
+          <!-- swiper-wrapper -->
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- swiper -->
+      </main>
+      <!-- main-content -->
+    </div>
+    <!-- page-wrapper -->
+    <div id="pop-up" class="pop-up">
+      <form action="./index.html" class="pop-up__form">
+        <label>
+          <span>Ім'я</span>
+          <input type="text" name="name" class="pop-up__name" />
+        </label>
+        <label>
+          <span>Телефон</span>
+          <input type="tel" name="tel" class="pop-up__tel" />
+        </label>
+        <label>
+          <span>e-mail</span>
+          <input type="email" name="email" class="pop-up__email" />
+        </label>
+        <input type="submit" value="Отправить" class="btn pop-up__submit" />
+      </form>
+    </div>
+
+    <!-- Swiper slider -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--build:js js/main.min.js -->
+    <script src="js/custom.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
